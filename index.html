@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Student portfolio showcasing education, skills, and projects. Computer Science student passionate about web development.">
+    <meta property="og:title" content="Alex Chen - Student Portfolio">
+    <meta property="og:description"
+        content="Computer Science student passionate about web development and building innovative solutions.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Muhammad Anzil - Student Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#home" class="logo">Muhammad Anzil</a>
+            <nav class="desktop-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Certificate</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="#home" onclick="closeMobileMenu()">Home</a>
+                <a href="#about" onclick="closeMobileMenu()">About</a>
+                <a href="#education" onclick="closeMobileMenu()">Education</a>
+                <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+                <a href="#projects" onclick="closeMobileMenu()">Certificate</a>
+                <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Muhammad Anzil</h1>
+            <p class="subtitle">BCA Student</p>
+            <p class="tagline">Passionate about building web applications and exploring the intersection of design and
+                technology. Currently learning frontend development.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-secondary" onclick="smoothScroll('#projects')">Connect Me <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <div class="bounce-arrow">⬇</div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="profile-image">
+                <div class="avatar">MA</div>
+            </div>
+            <div class="about-text">
+                <p>Hi! I'm Muhammad Anzil, BCA student passionate about building smart, simple, and efficient tech solutions. Always learning, always experimenting.</p>
+
+                <h3>Career Interests</h3>
+                <div class="interests-list">
+                    <div class="interest-item">
+                        <div class="interest-icon">🎯</div>
+                        <span>Game Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="timeline-line"></div>
+
+            <div class="education-item">
+                <div class="timeline-dot"></div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <div class="education-title">Bachelor of Computer application</div>
+                            <div class="education-institution"> Mahatma Gandhi University</div>
+                        </div>
+                        <span class="badge">2025 - 2029</span>
+                    </div>
+                    <p class="education-description">Focusing on software engineering, algorithms, and web technologies.
+                        GPA: 3.8/4.0</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="timeline-dot"></div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <div class="education-title">High School</div>
+                            <div class="education-institution">MST PUBLIC School</div>
+                        </div>
+                        <span class="badge">2021 - 2023</span>
+                    </div>
+                    <p class="education-description">Graduated with distinention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">H</div>
+                            <div>
+                                <div class="skill-name">HTML5</div>
+                                <div class="skill-level">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">C</div>
+                            <div>
+                                <div class="skill-name">CSS3</div>
+                                <div class="skill-level">55%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 55%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">C</div>
+                            <div>
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-level">45%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 45%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">Py</div>
+                            <div>
+                                <div class="skill-name">Python</div>
+                                <div class="skill-level">65%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">G</div>
+                            <div>
+                                <div class="skill-name">Git</div>
+                                <div class="skill-level">50%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">PS</div>
+                            <div>
+                                <div class="skill-name">Problem Solving</div>
+                                <div class="skill-level">85%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">CM</div>
+                            <div>
+                                <div class="skill-name">Communication</div>
+                                <div class="skill-level">55%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 55%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">TC</div>
+                            <div>
+                                <div class="skill-name">Team Collaboration</div>
+                                <div class="skill-level">70%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 70%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">TM</div>
+                            <div>
+                                <div class="skill-name">Time Management</div>
+                                <div class="skill-level">75%</div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--skill-level: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!DOCTYPE html>
+
+</body>
+</html>
+
+    </section>
+
+    <section id="projects">
+        <h2>Certificate</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"><img src=""></div>
+                <div class="project-content">
+                    <h3 class="project-title">Game Development</h3>
+                    <p class="project-description">Created a 2d game like pacman.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Pawno</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-links">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-input" id="name" type="text" placeholder="your name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" id="email" type="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-textarea" id="message" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">📧 Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-section">
+                    <h3>Contact Information</h3>
+                    <a href="mailto:alex.chen@email.com" class="contact-link contact-item">
+                        <div class="contact-icon">✉</div>
+                        <span>Muhammedanzil7777@email.com</span>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <span>Kerala , India</span>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <button class="social-btn" onclick="alert('LinkedIn')" title="LinkedIn">in</button>
+                        <button class="social-btn" onclick="alert('GitHub')" title="GitHub">◀▶</button>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <p>____________________________________________________________</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">Muhammad Anzil</a>
+                <p>Bachelor of Computer application</p>
+            </div>
+            <div class="footer-social">
+                <button class="social-btn" onclick="alert('LinkedIn')">in</button>
+                <button class="social-btn" onclick="alert('GitHub')">◀▶</button>
+                <button class="social-btn" onclick="alert('Email')">✉</button>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+    
+        </div>
+    </footer>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">🌙</button>
+
+
+</body>
+<script>themetoggle</script>
+
+</html>
